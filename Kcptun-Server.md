@@ -22,7 +22,7 @@
   "tcp": false
 }
 ```
-  - create config file: `/var/lib/docker/volumes/kcptun_data/_data/server.json`
+  - create config file: `touch /var/lib/docker/volumes/kcptun_data/_data/server.json`
   - paste config value to config file.
 
 ### Quick Start KcpTun Server Container

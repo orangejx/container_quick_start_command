@@ -1,6 +1,5 @@
 # Portainer CE
 
-
 ### Create Docker Volume
   - `docker volume create portainer_data`
 

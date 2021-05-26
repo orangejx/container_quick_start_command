@@ -4,14 +4,16 @@
   - `docker volume create zerotier_data`
 
 ### Quick Start Zerotier Container
-  - `docker run -d --name Zerotier \
---net=host \
---device=/dev/net/tun \
---cap-add=NET_ADMIN \
---cap-add=SYS_ADMIN \
--v zerotier_data:/var/lib/zerotier-one \
---restart=unless-stopped \
-bltavares/zerotier:1.6.2-2`
+  ```
+    docker run -d --name Zerotier \
+    --net=host \
+    --device=/dev/net/tun \
+    --cap-add=NET_ADMIN \
+    --cap-add=SYS_ADMIN \
+    -v zerotier_data:/var/lib/zerotier-one \
+    --restart=unless-stopped \
+    bltavares/zerotier:1.6.2-2
+  ```
 
 ### Join Zerotier Network
 > `8056c2e21c000001` is your zerotier network id.
